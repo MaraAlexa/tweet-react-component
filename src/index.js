@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import moment from 'moment';
 
 import './index.css';
-
+// BEGIN PROPTYPES
 class Time extends React.Component{
     computeTimeString() {
         return moment(this.props.time).fromNow(); //;
@@ -38,11 +38,12 @@ class RetweetButton extends React.Component{
 }
 class LikeButton extends React.Component{
     render(){
+        const { count } = this.props;
         return(
             <span className="like-button">
-                <i className="fa fa-heart like-button" />
+                <i className="fa fa-heart" />
                 <span className="like-count">
-                    {this.props.likes}
+                  { count ? count : null }
                 </span>
             </span>
         )
@@ -106,7 +107,7 @@ class Tweet extends React.Component {
                     <div className="buttons">
                         <ReplyButton />
                         <RetweetButton count={tweet.retweets}/>
-                        <LikeButton likes={tweet.likes}/>
+                        <LikeButton count={tweet.likes}/>
                         <MoreOptionsButton />
                     </div>
                 </div>
@@ -123,7 +124,7 @@ const dataTweet = {
         name: "DogLover123"
     },
     likes: 2,
-    retweets: 0,
+    retweets: 1,
     timestamp: "2017-01-11 21:30:45"
 }
 
