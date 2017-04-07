@@ -1,24 +1,13 @@
 import React from 'react';
 import Tweet from './components/tweet/Tweet';
+import Envelope from './components/envelope/Envelope';
 import AddressLabel from './components/address/AddressLabel';
-const dataTweet = {
-    message: "Something about dogs",
-    gravatar: "mara",
-    author: {
-        handle: "dogperson",
-        name: "DogLover123"
-    },
-    likes: 2,
-    retweets: 0,
-    timestamp: "2017-01-11 21:30:45"
-}
+// import data from data folder
+import dataTweet from './components/data/dataTweet';
+import returnLabel from './components/data/returnLabel';
+import recipientLabel from './components/data/recipientLabel';
 
-const person = {
-  name: 'Full Name',
-  street: '123 Fake St.',
-  city: 'Boston',
-  postalCode: 'MA 02118'
-}
+
 
 // begin envelope exercise
 
@@ -27,7 +16,7 @@ class App extends React.Component {
     return(
       <div>
         <Tweet tweet={dataTweet}/>
-        <AddressLabel person={person} />
+        <Envelope fromPerson={returnLabel} toPerson={recipientLabel} />
       </div>
     )
   }

@@ -62,3 +62,22 @@ body {
     margin-left: 6px;
     font-weight: bold;
 }
+/* envelope exercise */
+.stamp {
+  position: absolute;
+  top: 240px;
+  right: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+}
+.envelope {
+  margin-top: 3rem;
+  border: 1px solid black;
+  padding: 20px;
+}
+.to-label {
+  color: blue;
+  margin-left: 300px;
+}
