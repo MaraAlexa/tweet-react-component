@@ -20,7 +20,7 @@ const person = {
   postalCode: 'MA 02118'
 }
 
-
+// begin envelope exercise
 
 class App extends React.Component {
   render() {
