@@ -5,6 +5,13 @@ import Envelope from './components/envelope/Envelope';
 import CreditCard from './components/creditCard/CreditCard';
 import Poster from './components/poster/Poster';
 import SingleLineEmail from './components/email/SingleLineEmail';
+import Nav from './components/nav/Nav';
+import NavItem from './components/nav/NavItem';
+import ErrorBox from './components/error/ErrorBox';
+import Dialog from './components/dialog/Dialog';
+import Title from './components/dialog/Title';
+import Body from './components/dialog/Body';
+import Footer from './components/dialog/Footer';
 
 
 // import data from data folder
@@ -26,6 +33,21 @@ class App extends React.Component {
         <CreditCard cardInfo={creditCardData}/>
         <Poster posterInfo={posterData}/>
         <SingleLineEmail emailInfo={emailData}/>
+        <Nav>
+          <NavItem url='/'>Home</NavItem>
+          <NavItem url='/about'>About</NavItem>
+          <NavItem url='/contact'>Contact</NavItem>
+        </Nav>
+        <ErrorBox>
+          <p>Something has gone wrong</p>
+          <p>Really bad!</p>
+        </ErrorBox>
+
+        <Dialog>
+          <Title>Important Title</Title>
+          <Body>Some content</Body>
+          <Footer>footer</Footer>
+        </Dialog>
       </div>
     )
   }
