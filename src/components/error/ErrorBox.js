@@ -1,8 +1,16 @@
 import React from 'react';
+import {css} from 'glamor';
 
-function ErrorBox(props) {
+let boxStyling = css({
+  border: '1px solid blue',
+  padding: "10px",
+  margin: "10px",
+  width: "450px"
+})
+
+function ErrorBox({children}) {
   return(
-    <div>{props.children}</div>
+    <div {...boxStyling}>{children}</div>
   )
 }
 

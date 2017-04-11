@@ -12,6 +12,8 @@ import Dialog from './components/dialog/Dialog';
 import Title from './components/dialog/Title';
 import Body from './components/dialog/Body';
 import Footer from './components/dialog/Footer';
+import Toggle from './components/toggle/Toggle';
+import FileList from './components/githubFileList/FileList';
 
 
 // import data from data folder
@@ -21,6 +23,7 @@ import recipientLabel from './components/data/recipientLabel';
 import creditCardData from './components/data/creditCardData';
 import posterData from './components/data/posterData';
 import emailData from './components/data/emailData';
+import githubData from './components/data/githubData';
 
 // begin envelope exercise
 
@@ -46,8 +49,12 @@ class App extends React.Component {
         <Dialog>
           <Title>Important Title</Title>
           <Body>Some content</Body>
-          <Footer>footer</Footer>
+          <Footer>Footer</Footer>
         </Dialog>
+
+        <Toggle />
+
+        <FileList files={githubData}></FileList>
       </div>
     )
   }
