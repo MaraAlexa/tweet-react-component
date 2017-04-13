@@ -25,7 +25,7 @@ class Tweet extends React.Component {
                         <RetweetButton count={tweet.retweets}/>
                         <LikeButton count={tweet.likes}/>
                         <MoreOptionsButton />
-                        <IconButton>Do Something</IconButton>
+                        <IconButton>Do something</IconButton>
                     </div>
                 </div>
             </div>

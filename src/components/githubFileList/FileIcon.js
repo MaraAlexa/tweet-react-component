@@ -1,5 +1,4 @@
 import React from 'react';
-import {css} from 'glamor';
 
 
 function FileIcon ({ file }) {
@@ -10,7 +9,7 @@ function FileIcon ({ file }) {
     icon = 'fa-folder';
   }
   return (
-      <i className={ `fa ${icon}`}/>  
+      <i className={ `fa ${icon}`}/>
   )
 }
 

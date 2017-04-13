@@ -1,6 +1,7 @@
 import React from 'react';
 // import Components
 import Tweet from './components/tweet/Tweet';
+
 import Envelope from './components/envelope/Envelope';
 import CreditCard from './components/creditCard/CreditCard';
 import Poster from './components/poster/Poster';
@@ -14,6 +15,10 @@ import Body from './components/dialog/Body';
 import Footer from './components/dialog/Footer';
 import Toggle from './components/toggle/Toggle';
 import FileList from './components/githubFileList/FileList';
+import TweetList from './components/tweetList/TweetList';
+import List from './components/trello/List';
+
+
 
 
 // import data from data folder
@@ -24,6 +29,9 @@ import creditCardData from './components/data/creditCardData';
 import posterData from './components/data/posterData';
 import emailData from './components/data/emailData';
 import githubData from './components/data/githubData';
+import tweetListData from './components/data/tweetListData';
+import trelloSingleListOfCards from './components/data/trelloSingleListOfCards';
+
 
 // begin envelope exercise
 
@@ -55,6 +63,10 @@ class App extends React.Component {
         <Toggle />
 
         <FileList files={githubData}></FileList>
+
+        <TweetList tweets={tweetListData}></TweetList>
+        <List list={trelloSingleListOfCards}></List>
+
       </div>
     )
   }

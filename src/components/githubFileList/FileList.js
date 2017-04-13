@@ -22,7 +22,7 @@ class FileList extends React.Component {
       <table {...fileListStyle} className="file-list">
         <tbody>
 
-          { files.map(file => (
+          { files.map( (file) => (
             <FileListItem key={file.id} file={file}></FileListItem>
           )) }
 
