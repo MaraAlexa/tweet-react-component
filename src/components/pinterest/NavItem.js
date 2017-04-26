@@ -11,16 +11,15 @@ let navStyle = css({
 
 })
 
-const NavItem  = ({data}) => {
-  console.log(data.nav);
+const NavItem  = ({linksData}) => {
   return <div {...navStyle}>
-    <p>Boards: {data.nav.no_of_boards}</p>
-    <p>Pins: {data.nav.pins}</p>
-    <p>Pins: {data.nav.likes}</p>
-    <p>Pins: {data.nav.followers}</p>
-    <p>Pins: {data.nav.following}</p>
+      <p>Boards: {linksData.no_of_boards}</p>
+      <p>Pins: {linksData.pins}</p>
+      <p>Likes: {linksData.likes}</p>
+      <p>Followers: {linksData.followers}</p>
+      <p>Following: {linksData.following}</p>
 
-  </div>
+    </div>
 }
 
 

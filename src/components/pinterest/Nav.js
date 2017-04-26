@@ -1,9 +1,9 @@
 import React from 'react'
 import NavItem from './NavItem';
 
-const Nav  = ({data}) =>
+const Nav  = ({navData}) =>
     <div>
-      {<NavItem data={data} />}
+      {<NavItem linksData={navData} />}
     </div>
 
 export default Nav;

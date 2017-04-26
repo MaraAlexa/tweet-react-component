@@ -9,13 +9,22 @@ const data = {
   },
   content: [
     {id: 0, title: 'Tips & Tricks',
-      img: {mainImg: 'https://img.com', thumb1: 'https://thb1.com', thumb2: 'https://thb2.com', thumb3: 'https://thb3.com' },
+      img: {mainImg: 'https://placeimg.com/300/240/animals',
+      thumb1: 'https://placeimg.com/100/100/animals',
+      thumb2: 'https://placeimg.com/100/100/nature',
+      thumb3: 'https://placeimg.com/100/100/tech' },
        pins: 123  },
     {id: 1, title: 'New title 2',
-      img: {mainImg: 'https://img_second.com', thumb1: 'https://second_thb1.com', thumb2: 'https://second_thb2.com', thumb3: 'https://second_thb3.com' },
+      img: {mainImg: 'https://placeimg.com/300/240/people',
+      thumb1: 'https://placeimg.com/100/100/grayscale',
+      thumb2: 'https://placeimg.com/100/100/sepia',
+      thumb3: 'https://placeimg.com/100/100/people' },
        pins: 456  },
     {id: 2, title: 'New title 3',
-      img: {mainImg: 'https://img_third.com', thumb1: 'https://img_third1.com', thumb2: 'https://img_third2.com', thumb3: 'https://img_third3.com' },
+      img: {mainImg: 'https://placeimg.com/300/240/nature',
+      thumb1: 'https://placeimg.com/100/100/animals',
+      thumb2: 'https://placeimg.com/100/100/sepia',
+      thumb3: 'https://placeimg.com/100/100/architecture' },
        pins: 789  }
   ]
 }

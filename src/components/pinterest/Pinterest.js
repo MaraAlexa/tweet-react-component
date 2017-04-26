@@ -12,12 +12,15 @@ class Pinterest extends React.Component{
 
     return(
       <div {...pinterestStyle}>
-
+        <div className="board-title">
+          <img src="http://placehold.it/100x100" alt="logo"/>
+          <h1>{this.props.data.titleBoard}</h1>
+        </div>
         <div className="nav">
-          <Nav data={this.props.data} />
+          <Nav navData={this.props.data.nav} />
         </div>
 
-        <CardList />
+        <CardList cards={this.props.data.content} />
 
       </div>
     )
