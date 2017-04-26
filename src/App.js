@@ -18,6 +18,7 @@ import FileList from './components/githubFileList/FileList';
 import TweetList from './components/tweetList/TweetList';
 import Board from './components/trelloCardsList/Board';
 import NewsBoard from './components/hackerNews/NewsBoard';
+import Pinterest from './components/pinterest/Pinterest';
 
 
 
@@ -32,6 +33,7 @@ import githubData from './components/data/githubData';
 import tweetListData from './components/data/tweetListData';
 import board from './components/data/trelloAllCards';
 import hackerNewsData from './components/data/hackerNewsData';
+import pinterestData from './components/data/pinterestData';
 
 
 // begin envelope exercise
@@ -68,6 +70,8 @@ class App extends React.Component {
         <TweetList tweets={tweetListData}></TweetList>
         <Board board={board} />
         <NewsBoard data={hackerNewsData}/>
+
+        <Pinterest data={pinterestData} />
 
       </div>
     )
