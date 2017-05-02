@@ -62,3 +62,21 @@ body {
     margin-left: 6px;
     font-weight: bold;
 }
+.btn-default {
+  margin: 4px;
+}
+.btn-md {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.btn-lg {
+  padding: 18px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.btn-xs {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 10px;
+}

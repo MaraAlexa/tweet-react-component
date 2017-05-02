@@ -19,6 +19,7 @@ import TweetList from './components/tweetList/TweetList';
 import Board from './components/trelloCardsList/Board';
 import NewsBoard from './components/hackerNews/NewsBoard';
 import Pinterest from './components/pinterest/Pinterest';
+import GenreCloud from './components/internetRadio/GenreCloud';
 
 
 
@@ -34,6 +35,7 @@ import tweetListData from './components/data/tweetListData';
 import board from './components/data/trelloAllCards';
 import hackerNewsData from './components/data/hackerNewsData';
 import pinterestData from './components/data/pinterestData';
+import genresData from './components/data/genresData';
 
 
 // begin envelope exercise
@@ -72,6 +74,8 @@ class App extends React.Component {
         <NewsBoard data={hackerNewsData}/>
 
         <Pinterest data={pinterestData} />
+
+        <GenreCloud genres={genresData}/>
 
       </div>
     )
