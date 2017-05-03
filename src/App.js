@@ -21,6 +21,7 @@ import NewsBoard from './components/hackerNews/NewsBoard';
 import Pinterest from './components/pinterest/Pinterest';
 import GenreCloud from './components/internetRadio/GenreCloud';
 import Parent from './components/counter/Parent';
+import Layout from './components/layout/Layout';
 
 
 
@@ -78,6 +79,7 @@ class App extends React.Component {
 
         <GenreCloud genres={genresData}/>
         <Parent />
+        <Layout />
 
       </div>
     )
