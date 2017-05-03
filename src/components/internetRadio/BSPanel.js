@@ -1,15 +1,15 @@
 import React from 'react'
 import {css} from 'glamor'
 
-const BSPanel = ({title, children}) =>
+const BSPanel = (props) =>
   (
     <div className="panel panel-default genre-cloud">
       <div className="panel-heading">
-        <h3 className="panel-title">{title}</h3>
+        <h3 className="panel-title">{props.title}</h3>
       </div>
 
       <div className="panel-body">
-        {children}
+        {props.children}
       </div>
   </div>
   )

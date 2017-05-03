@@ -20,6 +20,7 @@ import Board from './components/trelloCardsList/Board';
 import NewsBoard from './components/hackerNews/NewsBoard';
 import Pinterest from './components/pinterest/Pinterest';
 import GenreCloud from './components/internetRadio/GenreCloud';
+import Parent from './components/counter/Parent';
 
 
 
@@ -76,6 +77,7 @@ class App extends React.Component {
         <Pinterest data={pinterestData} />
 
         <GenreCloud genres={genresData}/>
+        <Parent />
 
       </div>
     )
