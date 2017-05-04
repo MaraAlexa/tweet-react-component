@@ -1,15 +1,15 @@
 import React from 'react';
 
 class Content extends React.Component {
-  handleClick = () => {
-    this.props.onToggleHide(); // setState => isSidebarHidden : true or !true
 
-  }
   render(){
     return(
       <div className='content'>
         <h1>Content</h1>
-        <button onClick={this.handleClick}>Hide Sidebar</button>
+        <button onClick={this.props.onToggleHide}>Hide Sidebar</button>
+
+        <input type="text" value={this.props.inputValue} onChange={this.props.handleChange}/>
+        <p>Current input state: {this.props.inputValue}</p>
       </div>
     )
   }
