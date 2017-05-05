@@ -47,9 +47,7 @@ class Layout extends React.Component {
         {
           !this.state.isSidebarHidden ? <Sidebar /> : console.log('Sidebar is hidden')
         }
-
         <Content onToggleHide={this.toggleSidebar} inputValue={this.state.text} handleChange={this.handleChange} />
-
       </div>
     )
   }

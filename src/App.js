@@ -22,6 +22,7 @@ import Pinterest from './components/pinterest/Pinterest';
 import GenreCloud from './components/internetRadio/GenreCloud';
 import Parent from './components/counter/Parent';
 import Layout from './components/layout/Layout';
+import Layout2 from './components/layout2/Layout2';
 import LifecycleDemo from './components/lifecycle/LifecycleDemo';
 
 
@@ -82,6 +83,7 @@ class App extends React.Component {
         <Parent />
         <Layout />
         <LifecycleDemo />
+        <Layout2 />
 
       </div>
     )
